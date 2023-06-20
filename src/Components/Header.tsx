@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
    return (
-      <header className="container fixed border-b-2 border-sky-400 h-16 flex justify-between items-center px-32">
+      <header className="container fixed border-b border-sky-400 h-16 flex justify-between items-center px-32">
          <Link className="text-2xl hover:text-sky-400" to="/">
             Logo
          </Link>

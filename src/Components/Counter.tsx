@@ -24,10 +24,11 @@ const Counter = () => {
 
          <div className="pb-8 space-x-3 flex flex-col items-center justify-center space-y-8 xl:block">
             <input
-               className="py-2 px-4 rounded-xl outline-none border-2 text-center border-sky-400 bg-stone-900 focus:border-sky-500 hover:border-sky-500"
+               className="py-2 px-4 rounded-xl outline-none border-2 text-center border-sky-400 bg-stone-900 placeholder:text-grey focus:border-sky-500 hover:border-sky-500"
                type="text"
                value={inputValue}
                onChange={setValue}
+               placeholder="Input value"
             />
             <button
                className="py-2 px-4 rounded-xl border-2 border-sky-400"
