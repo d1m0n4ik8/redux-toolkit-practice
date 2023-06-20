@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { decrement, increment, incrementByAmount, clear, decrementByAmount } from '../Redux/Counter'
+import { decrement, increment, incrementByAmount, clear, decrementByAmount } from '../Redux/CounterSlice'
 import { useAppDispatch, useAppSelector } from '../Redux/Hooks'
 import { RootState } from '../Redux/Store'
 

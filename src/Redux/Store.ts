@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from './Counter'
+import counterReducer from './CounterSlice'
+import timerReducer from './TimerSlice'
 
 const store = configureStore({
    reducer: {
       counter: counterReducer,
+      timer: timerReducer,
    },
 })
 export type RootState = ReturnType<typeof store.getState>
