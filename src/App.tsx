@@ -10,7 +10,7 @@ const Counter = lazy(() => import('./Components/Counter'))
 const App = () => {
    return (
       <Suspense fallback={<>loading...</>}>
-         <div className="w-screen h-screen flex flex-col ">
+         <div className="w-screen h-screen flex flex-col bg-stone-900 text-sky-400">
             <Header />
             <main className="container flex-grow mx-auto">
                <Routes>
