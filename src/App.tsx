@@ -1,7 +1,10 @@
-import './App.css'
+import Counter from './Components/Counter'
 
-function App() {
-   return <div className="App"></div>
+const App = () => {
+   return (
+      <div className="w-screen h-screen">
+         <Counter />
+      </div>
+   )
 }
-
 export default App
