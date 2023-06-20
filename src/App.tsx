@@ -4,6 +4,7 @@ import Footer from './Components/Footer'
 import Header from './Components/Header'
 import { Route, Routes } from 'react-router-dom'
 import PageNotFound from './Components/PageNotFound'
+import Timer from './Components/Timer'
 
 const Counter = lazy(() => import('./Components/Counter'))
 
@@ -16,7 +17,8 @@ const App = () => {
                <Routes>
                   <Route path="/" element={<Counter />} />
                   <Route path="/counter" element={<Counter />} />
-                  <Route path="/*" element={<PageNotFound />} />
+                  <Route path="/timer" element={<Timer />} />
+                  <Route path="*" element={<PageNotFound />} />
                </Routes>
             </main>
             <Footer />

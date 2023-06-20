@@ -7,6 +7,7 @@ const store = configureStore({
       counter: counterReducer,
       timer: timerReducer,
    },
+   middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 })
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
