@@ -3,6 +3,7 @@ import { Suspense, lazy } from 'react'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
 import { Route, Routes } from 'react-router-dom'
+import PageNotFound from './Components/PageNotFound'
 
 const Counter = lazy(() => import('./Components/Counter'))
 
@@ -15,7 +16,7 @@ const App = () => {
                <Routes>
                   <Route path="/" element={<Counter />} />
                   <Route path="/counter" element={<Counter />} />
-                  <Route path="/*" element={<>not found</>} />
+                  <Route path="/*" element={<PageNotFound />} />
                </Routes>
             </main>
             <Footer />
