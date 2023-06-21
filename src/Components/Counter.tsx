@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { decrement, increment, incrementByAmount, clear, decrementByAmount } from '../Redux/CounterSlice'
+import { decrement, increment, clear } from '../Redux/CounterSlice'
 import { useAppDispatch, useAppSelector } from '../Redux/Hooks'
 import { RootState } from '../Redux/Store'
 
@@ -14,10 +14,10 @@ const Counter = () => {
       <div className="flex flex-col items-center justify-center align-middle w-full h-full text-3xl ">
          <div className="text-8xl pb-8">{value}</div>
          <div className="pb-8 space-x-3">
-            <button className="py-2 px-4 rounded-xl border-2 border-sky-400" onClick={() => dispatch(increment())}>
+            <button className="py-2 px-4 rounded-xl border-2 border-sky-400" onClick={() => dispatch(increment(1))}>
                Increment
             </button>
-            <button className="py-2 px-4 rounded-xl border-2 border-sky-400" onClick={() => dispatch(decrement())}>
+            <button className="py-2 px-4 rounded-xl border-2 border-sky-400" onClick={() => dispatch(decrement(1))}>
                Decrement
             </button>
          </div>
@@ -32,13 +32,13 @@ const Counter = () => {
             />
             <button
                className="py-2 px-4 rounded-xl border-2 border-sky-400"
-               onClick={() => dispatch(decrementByAmount(+inputValue))}>
+               onClick={() => dispatch(increment(+inputValue))}>
                Decrement by amount
             </button>
 
             <button
                className="py-2 px-4 rounded-xl border-2 border-sky-400"
-               onClick={() => dispatch(incrementByAmount(+inputValue))}>
+               onClick={() => dispatch(decrement(+inputValue))}>
                Increment by amount
             </button>
          </div>
