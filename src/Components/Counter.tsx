@@ -13,7 +13,7 @@ const Counter = () => {
    return (
       <div className="flex flex-col items-center justify-center align-middle w-full h-full text-3xl ">
          <div className="text-8xl pb-8">{value}</div>
-         <div className="pb-8 space-x-3">
+         <div className="space-x-3">
             <button className="py-2 px-4 rounded-xl border-2 border-sky-400" onClick={() => dispatch(increment(1))}>
                Increment
             </button>

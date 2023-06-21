@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
    return (
-      <header className="container fixed border-b border-sky-400 h-16 flex justify-between items-center px-32">
+      <header className="container fixed bg-stone-900 border-b border-sky-400 h-16 flex justify-between items-center px-32">
          <Link className="text-2xl hover:text-sky-400" to="/">
             Logo
          </Link>
@@ -12,6 +12,9 @@ const Header = () => {
             </Link>
             <Link className="hover:text-sky-600" to="timer">
                Timer
+            </Link>
+            <Link className="hover:text-sky-600" to="posts">
+               Posts
             </Link>
          </nav>
       </header>

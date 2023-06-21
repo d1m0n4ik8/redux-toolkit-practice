@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import counterReducer from './CounterSlice'
 import timerReducer from './TimerSlice'
+import postsReducer from './PostsSlice'
 
 const store = configureStore({
    reducer: {
       counter: counterReducer,
       timer: timerReducer,
+      posts: postsReducer,
    },
    middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 })
